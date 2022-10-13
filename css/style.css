@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-image: url('../img/wing.png');
+}
+
+.questionnaire {
+    background-color: rgb(212, 241, 252);
+    border: 2px solid rgb(138, 138, 250);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 900px;
+}
+
+li {
+    padding: 2px 20px;
+}
+
+.questionnaire__questions,
+.questionnaire__indictor,
+.questionnaire__results {
+    margin-bottom: 20px;
+}
+
+.questionnaire__questions_aitem,
+.questionnaire__results_aitem {
+    margin-bottom: 20px;
+}
+
+.questionnaire__questions_aitem--question,
+.questionnaire__results_aitem--question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.questionnaire__questions_aitem--answers,
+.questionnaire__results_aitem--answers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.questionnaire__results {
+    display: none;
+}
+
+.btn__restart {
+    display: none;
+}
+
+.btn__restart, 
+.btn__next {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(138, 138, 250);
+}
+
+.questions_hidden,
+.indicator_hidden,
+.btn__next_hidden {
+    display: none; 
+}
+
+.results_visible, 
+.btn__restart_visible {
+    display: block;
+}
+
+.answer__invalid {
+    color: red;
+}
+
+.answer__valid {
+    color: green;
+}
